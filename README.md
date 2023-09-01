@@ -1,4 +1,4 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
@@ -36,19 +36,54 @@ Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
 Program:
-/*
+```
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: MOHAMED AZEEM N
+RegisterNumber:  212222110026
+
+HALF ADDER PROGRAM:
+__________________
+module HALFADDER(a,b,c,s);
+input a,b;
+output s,c;
+assign s=a^b;
+assign c=a&b;
+endmodule
+
+FULL ADDER PROGRAM:
+___________________
+module fulladd(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum=a^b^c;
+assign carry=((a&b)|(b&c)|(c&a));
+endmodule
+
+```
 Logic symbol & Truthtable
 RTL realization
 
 ### Output:
-### RTL
+### HalfAdder output diagram:
+![Screenshot (110)](https://github.com/mohamedazeem33/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121040764/ebeaae1d-8b99-49b2-a64e-0d5adde440de)
+### FullAdder diagram output:
+![Screenshot (113)](https://github.com/mohamedazeem33/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121040764/16a7496f-db3a-4857-9186-6dcfc87d385e)
+
+
 ### TIMING DIAGRAM
+### half adder:
+![Screenshot (109)](https://github.com/mohamedazeem33/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121040764/49509c8f-0a68-428f-913e-864f7eeb07d0)
+### full adder:
+![Screenshot (112)](https://github.com/mohamedazeem33/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121040764/0c31ea94-58b6-4eb5-b987-5a86de94a54a)
 
 
-### TRUTH TABLE 
+
+### TRUTH TABLE:
+![DE exp 3 truth table](https://github.com/mohamedazeem33/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121040764/4f95e53c-d92c-43bd-aad6-314a5e1734f5)
+
+
+![DE exp 3 truth table 2](https://github.com/mohamedazeem33/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121040764/a54676c0-c3a0-413b-bf88-5d42fc75917e)
+
 
 ### Result:
+Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified.
